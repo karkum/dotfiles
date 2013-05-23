@@ -1,3 +1,4 @@
+"master
 " Use vim settings
 set nocompatible
 
