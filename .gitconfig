@@ -12,3 +12,4 @@
     co = checkout
     df = diff
     lg = log -p
+    last = log -1 HEAD
