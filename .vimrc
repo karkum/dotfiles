@@ -1,4 +1,3 @@
-"master change
 " Use vim settings
 set nocompatible
 
@@ -60,7 +59,7 @@ set showcmd
 set wildmenu
 
 "no errors
-set visualbell 
+set novisualbell 
 set noerrorbells
 
 " persistent undo (source:https://github.com/skwp/dotfiles/blob/master/vimrc)

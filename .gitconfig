@@ -12,4 +12,6 @@
     co = checkout
     df = diff
     lg = log -p
-    last = log -1 HEAD
+	last = log -1 HEAD
+    hist = git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+
