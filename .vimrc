@@ -22,6 +22,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Bigger history
+set history=200
+
 " Do indentation
 set autoindent
 
