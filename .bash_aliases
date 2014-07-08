@@ -55,9 +55,6 @@ alias lol="git log --oneline --decorate --graph"
 alias gdl="git diff head~1 head"
 alias gacp="git add .; git commit --amend --no-edit; git push -f"
 
-# Directory Navigation Aliases
-alias work='cd $workspace'
-alias report='cd ~/workspace/git/report'
-alias rl='cd ~/workspace/git/report-libs'
-alias rli='cd ~/workspace/git/report-libs/report-libs-importer'
-alias core='cd ~/workspace/git/core'
+# Svn
+alias svn_remove_all="for file in `svn status|grep "^ *?"|sed -e 's/^ *? *//'`; do rm -f $file ; done"
+alias svn_add_all="for file in `svn status|grep "^ *?"|sed -e 's/^ *? *//'`; do svn add $file ; done"
