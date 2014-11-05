@@ -38,8 +38,8 @@ set hlsearch
 set incsearch
 
 " Search center found results
-map N Nzz
-map n nzz
+noremap N Nzz
+noremap n nzz
 
 " Better search 
 set ignorecase
@@ -71,14 +71,14 @@ set undodir=~/.vim/backups
 set undofile
 
 " tab shortcuts
-map <C-t> :tabnew<CR>
-"map <C-w> :tabclose<CR>
+noremap <C-t> :tabnew<CR>
+noremap <C-w> :tabclose<CR>
 
 " navigating between splits
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
+noremap <c-l> <c-w>l
+noremap <c-h> <c-w>h
 
 " I do :W too often
 command! W :w
@@ -95,5 +95,5 @@ syntax on
 colorscheme codeschool
 
 " move down and up by a single row on screen, not to front of the line
-nmap j gj
-nmap k gk
+nnoremap j gj
+nnoremap k gk
