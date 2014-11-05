@@ -13,12 +13,15 @@ map <F3> :setlocal spell! spelllang=en_us<CR>
 " Toggle highlighting
 map <F4> :set hlsearch!<cr>
 
+nnoremap <c-n> :NERDTreeToggle<cr>
+vnoremap <c-n> :NERDTreeToggle<cr>
+
 " Set line numbers and ruler
 set number
 set ruler
 
 " The following 3 lines enforce no tabs in file and all tabs are 4 spaces
-set tabstop=4
+set tabstop=2
 set shiftwidth=4
 set expandtab
 
@@ -88,3 +91,9 @@ filetype indent on
 syntax enable
 syntax on
 
+" this should live in ~/.vim/colors
+colorscheme codeschool
+
+" move down and up by a single row on screen, not to front of the line
+nmap j gj
+nmap k gk
